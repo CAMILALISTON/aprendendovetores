@@ -36,18 +36,30 @@ function remove(){
     }
 }
 
+// function edit(){
+//     let produto = document.getElementById("txt").value;
+//     for(let item of batatas){
+//         if(item.toUpperCase() == produto.toUpperCase()){
+//             item = prompt("Digite o novo valor para " + item);
+//             break;
+//         }
+//     }
+//     document.getElementById("lista").innerHTML = batatas;
+// }
+// Feito pelo professor mas não funcionou
+
+
 function edit(){
     let produto = document.getElementById("txt").value;
-    for(let item of batatas){
-        if(item.toUpperCase() == produto.toUpperCase()){
-            item = prompt("Digite o novo valor para " + item);
+    for(let pos = 0; pos < batatas.length; pos ++){
+        if (batatas[pos].toUpperCase() == produto.toUpperCase()){
+
+        batatas[pos] = prompt("Digite o novo valor para ");
             break;
         }
     }
     document.getElementById("lista").innerHTML = batatas;
 }
-
-
 
 
 
